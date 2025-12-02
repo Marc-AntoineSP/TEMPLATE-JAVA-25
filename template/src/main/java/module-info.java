@@ -1,4 +1,4 @@
-module fr.<VotreNomDeGroupe>.<NomDeVotreApp> {
+module fr.VotreNomDeGroupe.NomDeVotreApp {
     requires javafx.controls;
     requires javafx.fxml;
 
@@ -10,10 +10,10 @@ module fr.<VotreNomDeGroupe>.<NomDeVotreApp> {
     requires itextpdf;
     requires jbcrypt;
 
-    exports fr.<VotreNomDeGroupe>.<NomDeVotreApp>;
+    exports fr.VotreNomDeGroupe.NomDeVotreApp;
 
-    opens fr.<VotreNomDeGroupe>.<NomDeVotreApp> to javafx.fxml;
-    opens fr.<VotreNomDeGroupe>.<NomDeVotreApp>.controller to javafx.fxml;
+    opens fr.VotreNomDeGroupe.NomDeVotreApp to javafx.fxml;
+    opens fr.VotreNomDeGroupe.NomDeVotreApp.controller to javafx.fxml;
 
-    opens fr.<VotreNomDeGroupe>.<NomDeVotreApp>.model to jakarta.persistence, org.hibernate.orm.core;
+    opens fr.VotreNomDeGroupe.NomDeVotreApp.model to jakarta.persistence, org.hibernate.orm.core;
 }
